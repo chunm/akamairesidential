@@ -1,0 +1,236 @@
+body {
+	max-width: 1200px;
+    margin: auto;
+}
+svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+    pointer-events: none;
+}
+
+.hidden {
+	display: none;
+}
+.pointerEventsNone {
+    pointer-events: none;
+}
+.submenuInput:checked + label svg {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.submenuInput:checked + label + .submenuContent {
+    display: block;
+}
+
+.submenuContent {
+    display: none;
+}
+
+.slogan {
+    color: #f08322;
+}
+
+/* Header CSS */
+header nav {
+    color: #e51e25;
+    background: #fff;
+}
+
+#TopNav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #e72023;
+}
+
+#TopNav ul, #TopNav li {
+    list-style: none;
+}
+
+#TopNav .submenuLabel {
+    font-weight: bold;
+}
+
+/* End Header CSS */
+
+
+
+
+/* Footer CSS */
+	footer {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    text-align: center;
+	    color: #ea5328;
+	}
+	footer a {
+	    text-decoration: none;
+	    color: #ea5328;
+	    font-size: 25px;
+	}
+	footer div {
+	    display: flex;
+	    flex-direction: column;
+	}
+	footer img {
+	    margin: auto;
+	}
+	footer span {
+	    margin: 10px;
+	}
+/* End Footer CSS */
+
+/* Mobile CSS */
+@media screen and (max-width: 999px) {
+	.desktopOnly {
+		display: none;
+	}
+
+	header {
+		position: relative;
+	}
+	.menu.mobileOnly {
+	    position: absolute;
+	    top: 0;
+	    padding: 18px 20px;
+	    z-index: 1;
+	    color: #ea4f23;
+    	font-weight: bold;
+	}
+	.logo.mobileOnly {
+	    text-align: center;
+	    display: block;
+	}
+
+	.logo {
+	    text-decoration: none;
+	}
+	.navHeader {
+	    position: relative;
+	}
+
+	.navHeader .logo {
+	    display: block;
+	    text-align: center;
+	}
+
+	.menuClose {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    padding: 25px;
+	    color: #ea4f23;
+	}
+	header nav {
+	    width: calc(100vw - 50px);
+	    right: 100vw;
+	    height: 100vh;
+	    overflow: auto;
+	    position: absolute;
+	    top: 0;
+	    z-index: 1;
+	    transition: right .3s ease-in-out;
+	}
+	header input:checked+.menuOverlay {
+	    display: initial;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    z-index: 1;
+    	background: rgba(0, 0, 0, .25);
+    	width: 100vw;
+    	height: 100vh;
+	}
+	header input:checked+label+nav {
+	    right: 50px;
+	    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+	}
+	#TopNav li {
+	    padding: 10px 0;
+	}
+	.submenuLabel svg {
+	    width: 15px;
+	}
+
+}
+
+/* Desktop CSS */
+@media screen and (min-width: 1000px) {
+	#MainContent {
+	    max-width: 1200px;
+	    margin: auto;
+	}
+	.mobileOnly {
+		display: none;
+	}
+	header {
+	    display: flex;
+	}
+
+	.logo.desktopOnly {
+	    padding: 10px 15px;
+	    width: 412px;
+	}
+
+	#TopNav {
+	    padding: 0 15px;
+	    margin: 0;
+	    display: flex;
+	    justify-content: flex-end;	
+	    position: absolute;	
+	    right: 0;	
+	    bottom: 0;
+	}
+
+	nav {
+	    display: flex;
+	    flex-direction: column;
+	    width: calc(100vw - 412px);	
+	    position: relative;
+	}
+
+	.slogan.desktopOnly {
+	    font-size: 32px;
+	    text-align: right;	
+	    margin: 25px;
+	}
+
+	#TopNav > li > a, #TopNav > li > label {
+	    padding: 10px;
+	    font-size: 19px;
+	}
+	header #TopNav .submenuContent {
+	    background: #e61d26;
+	    margin: 0;
+	    padding: 20px 0;
+	    text-align: center;
+	    border-radius: 0 0 5px 5px;
+	}
+
+	header #TopNav .submenuContent a {
+	    color: #fff;
+	    display: block;
+	    padding: 20px;
+	    font-size: 20px;
+	}
+	.submenuLi svg {
+	    width: 15px;
+	}
+	.submenuInput:checked + label + .submenuContent {
+	    position: absolute;
+	    z-index: 1;
+	}
+
+	footer {
+	    flex-direction: row;
+	    justify-content: space-evenly;
+	    align-items: center;
+	}
+
+}
