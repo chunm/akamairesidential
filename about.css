@@ -2,6 +2,9 @@ body {
 	max-width: 1200px;
     margin: auto;
 }
+img {
+    max-width: 100%;
+}
 svg {
     width: 20px;
     height: 20px;
@@ -17,6 +20,9 @@ svg {
 }
 .pointerEventsNone {
     pointer-events: none;
+}
+.textAlignCenter {
+	text-align: center;
 }
 .submenuInput:checked + label svg {
     -ms-transform: rotate(180deg);
@@ -57,7 +63,16 @@ header nav {
 
 /* End Header CSS */
 
-
+/* Main Content */
+	.colorRed {
+	    color: #e62028;
+	}
+	.signature {
+	    text-align: right;
+	    font-family: "Brush Script MT", cursive;
+	    font-size: 42px;
+	}
+/* End Main Content */
 
 
 /* Footer CSS */
@@ -87,6 +102,20 @@ header nav {
 
 /* Mobile CSS */
 @media screen and (max-width: 999px) {
+	.side img {
+	    width: 50vw;
+	    max-width: 300px;
+	}
+
+	.side {
+	    text-align: center;
+	    margin: 20px 0 0;
+	}
+
+	#MainContent {
+	    margin: 0 8px;
+	}
+
 	.desktopOnly {
 		display: none;
 	}
@@ -162,8 +191,17 @@ header nav {
 
 /* Desktop CSS */
 @media screen and (min-width: 1000px) {
+	.mainContentWrapper {
+	    display: flex;
+	}
+	.side {
+	    margin: 20px;
+	    min-width: 200px;
+	}
+
+
 	#MainContent {
-	    max-width: 1200px;
+	    max-width: 1124px;
 	    margin: auto;
 	}
 	.mobileOnly {

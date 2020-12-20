@@ -1,6 +1,9 @@
 body {
-	max-width: 1200px;
+	max-width: 1124px;
     margin: auto;
+}
+img {
+    max-width: 100%;
 }
 svg {
     width: 20px;
