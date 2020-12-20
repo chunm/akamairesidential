@@ -1,5 +1,6 @@
 body {
-	margin: 0;
+	max-width: 1200px;
+    margin: auto;
 }
 svg {
     width: 20px;
@@ -11,6 +12,10 @@ svg {
     pointer-events: none;
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
 .hidden {
 	display: none;
 }
@@ -56,8 +61,30 @@ header nav {
 
 /* End Header CSS */
 
+/* Main Content */
+	#HomeImgBackground {
+	    background-image: url("homebackground.jpg");
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	}
+	
+	#MainContent p {
+	    font-size: 24px;
+	}
 
+	.colorOrange {
+	    color: #f08322;
+	}
 
+	.colorRed {
+	    color: #e62028;
+	}
+
+	.subtext {
+	    font-size: 20px;
+	}
+/* End Main Content */
 
 /* Footer CSS */
 	footer {
@@ -86,6 +113,19 @@ header nav {
 
 /* Mobile CSS */
 @media screen and (max-width: 999px) {
+
+	#HomeImgBackground {
+		height: 135px;
+	}
+	.centerContent {
+	    padding: 0 8px;
+	}
+	.flexContainer {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	}
+
 	.desktopOnly {
 		display: none;
 	}
@@ -161,6 +201,31 @@ header nav {
 
 /* Desktop CSS */
 @media screen and (min-width: 1000px) {
+
+	#HomeImgBackground {
+		height: 365px;
+	}
+	.flexContainer {
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: space-between;
+	    max-width: 100vw;
+	    padding: 0 20px;
+	}
+
+	.side {
+	    max-width: 30vw;
+	}
+
+	.side img {
+	    width: 100%;
+	    height: auto;
+	}
+
+	.centerContent {
+	    max-width: 50vw;
+	}
+
 	.mobileOnly {
 		display: none;
 	}
@@ -177,23 +242,32 @@ header nav {
 	    padding: 0 15px;
 	    margin: 0;
 	    display: flex;
-	    justify-content: space-between;
+	    justify-content: flex-end;
+	    position: absolute;
+	    right: 0;
+	    bottom: 0;
 	}
 
+	#MainContent {
+	    max-width: 1200px;
+	    margin: auto;
+	}
 	nav {
 	    display: flex;
 	    flex-direction: column;
+	    width: calc(100vw - 412px);
+	    position: relative;
 	}
 
 	.slogan.desktopOnly {
 	    font-size: 32px;
-	    text-align: center;
-	    margin: 10px;
+	    text-align: right;
+	    margin: 25px;
 	}
 
 	#TopNav > li > a, #TopNav > li > label {
 	    padding: 10px;
-	    font-size: 32px;
+	    font-size: 19px;
 	}
 	header #TopNav .submenuContent {
 	    background: #e61d26;
@@ -209,14 +283,12 @@ header nav {
 	    padding: 20px;
 	    font-size: 20px;
 	}
-	.submenuLi {
-		min-width: 235px;
-		position: relative;
-	}
 	.submenuLi svg {
+	    width: 15px;
+	}
+	.submenuInput:checked + label + .submenuContent {
 	    position: absolute;
-	    top: 8px;
-	    right: 30px;
+	    z-index: 1;
 	}
 
 	footer {
