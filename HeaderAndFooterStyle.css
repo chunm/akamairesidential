@@ -185,7 +185,7 @@ header nav {
 	    justify-content: flex-end;	
 	    position: absolute;	
 	    right: 0;	
-	    bottom: 0;
+	    bottom: 10px;
 	}
 
 	nav {
