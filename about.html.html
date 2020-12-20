@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Akamai Residential Services</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Akamai Residential Services: real estate, home renovations, improvements, repairs and property management.">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="Michael Chun, Bradford Chun">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="flower-favicon.png">
+
+		<link rel="stylesheet" href="about.css">
+	</head>
+
+	<body>
+		<header>
+			<label for="menu" class="menu mobileOnly">MENU</label>
+			<a class="logo desktopOnly" aria-label="Akamai Residential Services" href="/akamairesidential/home.html">
+				<img src="Logo-Desktop-Resized.jpg" alt="Akamai Residential Services Logo" width="382" height="95">
+			</a>
+			<a class="logo mobileOnly" aria-label="Akamai Residential Services" href="/akamairesidential/home.html">
+				<img src="Logo-Mobile-Resized.jpg" alt="Akamai Residential Services Logo" width="191" height="48">
+			</a>
+			<input type="checkbox" value="menu" name="menuoptns" id="menu" class="hidden" aria-label="Menu Toggle">
+			<label for="menu" class="menuOverlay hidden"></label>
+			<nav>
+				<div class="mobileOnly navHeader">
+					<label for="menu" class="menuClose mobileOnly">
+						<svg class="pointerEventsNone"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
+					</label>
+					<a class="logo" aria-label="Akamai Residential Services" href="/home.html">
+						<img src="Logo-Mobile-Resized.jpg" alt="Akamai Residential Services Logo" width="191" height="48">
+						<div class="slogan"> The Ohana touch for your Hale</div>
+					</a>
+					
+				</div>
+				
+				<div class="slogan desktopOnly"> The Ohana touch for your Hale</div>
+
+				<ul id="TopNav">
+					<li>
+						<a href="/akamairesidential/home.html" aria-label="Akamai Residential Services: Home">HOME</a>
+					</li>
+					<li>
+						<a href="/akamairesidential/about.html" aria-label="Akamai Residential Services: About">ABOUT</a>
+					</li>
+					<li class="submenuLi">
+						<input type="checkbox" name="submenu" id="submenu1" class="submenuInput hidden">
+						<label for="submenu1" class="submenuLabel">SERVICES 
+							<svg class="chevron-down-icon">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#chevron-down"></use>
+							</svg> 
+						</label>
+						<ul class="submenuContent">
+							<li>
+								<a href="/akamairesidential/property-management.html" aria-label="Akamai Residential Services: Property Management">Property Management</a>
+							</li>
+							<li>
+								<a href="/akamairesidential/improvements.html" aria-label="Akamai Residential Services: Improvements">Improvements</a>
+							</li>
+							<li>
+								<a href="/akamairesidential/restoration.html" aria-label="Akamai Residential Services: Restoration">Restoration</a>
+							</li>
+							<li>
+								<a href="/akamairesidential/water-power.html" aria-label="Akamai Residential Services: Water and Power">Water & Power</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="/akamairesidential/fans" aria-label="Akamai Residential Services: Fans">FANS</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div id="MainContent">
+
+			<div class="side">
+				<img src="brad.jpg" alt="The owner Brad" loading="lazy">
+			</div>
+
+			<div>
+				<h1>About the Founder</h1>
+
+				<p>
+					Brad Chun grew up in Honolulu, graduating from Maryknoll High School and then Seattle University, with a degree in Electrical Engineering. Following college, Brad’s interest in aviation led him to work on aircraft systems as an Engineer at United Airlines; then at the Boeing Commercial Aircraft Company. After more than three decades in the aircraft engineering industry, Brad’s last position prior to retirement brought him back to the islands at Hawaiian Airlines.
+				</p>
+
+				<p>
+					Brad has been doing home renovations, improvements, repairs and managing multiple rental properties over the past 20 years. He founded Akamai Residential Services upon retirement from his corporate job, after his parents shared horror stories of how unreliable, unprofessional and costly residential repairs have been for some of their friends and kapuna on fixed incomes. Brad started this business to bring back competent, reliable, professional and reasonable residential services to local residents. 
+				</p>
+
+				<p>
+					Hawaii is a magnificent place to live and Akamai Residential Services wants to ensure that we help keep your home both beautiful and functional without costing a fortune to maintain, upgrade or renovate. To help keep our planet green and healthy, Akamai has partnered with the Nature Conservancy to have a tree planted with every completed project so that your home repair can have a lasting, positive impact.
+				</p>
+
+				<p>
+					From my Ohana to yours, have a safe and blessed year and I hope to have the opportunity to serve you in the near future!
+				</p>
+
+				<span class="signature">Brad</span>
+
+			</div>
+
+		</div>
+
+		<svg hidden class="hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<defs>
+				<symbol id="chevron-down" viewBox="0 0 20 11"> 
+					<title>Down</title> 
+					<desc>Menu Toggle Arrow</desc> 
+					<path d="M9.758 8.898L17.81.847a1 1 0 1 1 1.414 1.414l-8.427 8.428a1 1 0 0 1-1.039.236 1 1 0 0 1-1.038-.236L.293 2.26A1 1 0 0 1 1.707.847l8.051 8.051z"></path> 
+				</symbol>
+				<symbol id="close" viewBox="0 0 320 512"> 
+					<title>Close</title> 
+					<path d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"></path> 
+				</symbol>
+			</defs>
+		</svg>
+
+		<footer>
+
+			<a href="tel:+1-808-797-9987">(808) 797-9987</a>
+
+			<div>
+				<img src="flower-desktop.png" alt="Hawaiian Flower" width="136" height="143">
+				<span>AKAMAI RESIDENTIAL, LLC</span>
+			</div>
+
+			<a href="mailto:akamai.residential@gmail.com">Akamai.Residential@gmail.com</a>
+			
+		</footer>
+
+	</body>
+</html>
